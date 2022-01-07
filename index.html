@@ -197,7 +197,7 @@
 								    </div>
 								    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 								        <div class="panel-body">
-								            <p>문과계열</p>
+								            <p>인문계</p>
 												<ul>
 													<li>2015.02 ~ 2018.02</li>
 												</ul>
@@ -236,17 +236,19 @@
 				                  <P>
 				                  	여행을 갈 때 한 번에 모든걸 해결 할 수 있도록 숙소예약과 체험예약을 도와주는 사이트입니다.<br>
 				                  	사업자가 숙소/체험을 등록할 시 해시태그를 사용해 나타낼 수 있고, 추천장소도 공유해줍니다.<br>
-				                  	일반 회원은 숙소/체험을 예약하고 결제할 수 있으며, 1:1로 사업자와 소통 할 수 있습니다.<br>
+				                  	일반 회원은 숙소/체험을 예약하고 결제할 수 있습니다.<br>
+				                  	회원들 1:1로 채팅할 수 있으며, web socket,stomp를 사용하여 통신하고 ajax를 사용해 비동기 통신으로 가져옵니다.<br>
 				                  	관리자는 상품 등록 수수료와 월별 판매 수수료를 통해 수익을 얻을 수 있고, 페이지에서 chart로 확인할 수 있습니다.<br>
 				                  	사이트의 사용자들은 쿠폰을 발급받거나, 관심상품을 등록할 수 있으며, 오랫동안 미접속 시 휴면 계정 처리가 됩니다.<br>
 				                  </P>
 					             <p>
 				                  	<strong>Development Environment</strong> <br>
-				                  	OS : Window10 <br>
-				                  	Library : Spring Boot(v2.4.5), jQuery(v3.6.0), AJAX, Apache Tomcat9, Servlet(v4.0), Lombok(v1.18) <br>
-				                  	Language : Html5, Css3 , Java, JavaScript<br>
-				                  	Database : MariaDB, HeidiSQL <br>
-				                  	IDE : STS(v.4.10)  
+				                  	OS : Window10, macOS Monterey 12.0.1 <br>
+				                  	Library : Spring Boot, jstl, jQuery, AJAX, Servlet, Lombok, MyBatis, BootStrap <br>
+				                  	Language : HTML5, CSS3 , Java(openJDK 11.0.13), JavaScript<br>
+				                  	Database : MariaDB, HeidiSQL, Sequel Pro <br>
+				                  	WAS : Apache Tomcat9 <br>
+				                  	IDE : Spring Tool Suite 4(v.4.12.1,v.4.13.0)  
 				                  </p>
 				                  <p>
 				                  	<strong>Service Environment</strong><br>
@@ -257,7 +259,7 @@
 				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/lumpyspaceyz/voyage')">Github</button>
 					              	<button type="button" class="btn btn-link" onclick="window.open('requirements.htm')">요구사항 정의서</button>
 					              	<button type="button" class="btn btn-link" onclick="window.open('images/ERD.png')">ERD</button>
-					              	<button type="button" class="btn btn-link" onclick="window.open('http://olivia1107.kro.kr/cabbageMarket/index')">프로젝트</button>
+					              	<button type="button" class="btn btn-link" onclick="window.open('http://3.36.52.11/voyage/index')">프로젝트</button>
 					              </p>
 				               </div>
 				            </div>
@@ -281,10 +283,11 @@
 				                  <p>
 				                  	<strong>Development Environment</strong> <br>
 				                  	OS : Window10 <br>
-				                  	Library : Eclipse 2020-12 (4.18.0), jQuery(v3.6.0), AJAX, Apache Tomcat9, Servlet(v4.0), Lombok(v1.18) <br>
-				                  	Language : Html5, Css3 , Java, JavaScript <br>
+				                  	Library : jstl, jQuery, Servlet, BootStrap, JSP <br>
+				                  	Language : HTML5, CSS3 , Java(), JavaScript<br>
 				                  	Database : MariaDB, HeidiSQL <br>
-				                  	IDE : STS(v.4.10) 
+				                  	WAS : Apache Tomcat9 <br>
+				                  	IDE : Eclipse 2020-12 (4.18.0)
 				                  </p>
 				                  <p>
 				                  	<strong>Service Environment</strong><br>
@@ -293,15 +296,13 @@
 				                  </p>
 				                  <p>
 				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/koi190306/todo')">Github</button>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('#')">요구사항 정의서</button>
-					              	<button type="button" class="btn btn-link" onclick="window.open('#')">ERD</button>
 				                  	<button type="button" class="btn btn-link" onclick="window.open('http://3.35.48.160/todo/login')">프로젝트</button>
 				                  </p>
 				               </div>
 				            </div>
 				         </article>
 				         
-				         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+				         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 				            <div class="timeline-entry-inner">
 				               <div class="timeline-icon color-3">
 				                  <i class="icon-pen2"></i>
@@ -310,19 +311,21 @@
 				               	<h2>E-BOOK SHOP <span> 2021.9</span></h2>
 				               	  <h2 style="color:#46AAFF;"><strong>전자책 쇼핑몰</strong></h2>	
 				                  <p>
-									캘린더를 만들고 날짜 별로 to-do List를 작성하고 관리할 수 있는 시스템 입니다.<br>
-									간단한 DB와 Model2 방식으로 구현했으며, boot strap을 사용해 레이아웃 설정 및 디자인을 했습니다.<br>
-									사용자의 로그인 정보로 캘린더 내에 todo를 불러오며, 오늘의 일정도 출력할 수 있습니다.<br>
-									사용자는 일정 관리를 위해 일정을 추가, 삭제, 수정이 가능합니다.<br>
-									관리자는 공지사항을 입력할 수 있으며, 공지는 로그인 페이지에서 sweetalert2 api를 사용해 보여줍니다.
+			                 		Model1 방식으로 전자책 쇼핑몰을 구현하였습니다.<br>
+			                 		관리자 페이지에서 전자책을 관리하고, 수정할 수 있도록 했습니다.<br>
+			                 		카테고리 삭제 시에는 관련 전자책도 삭제처리 하기 위해서 DB의 외래키 제을 사용했습니다.<br>
+			                 		관리자 페이지나 index 페이지에서는 가장 많이 팔린 책이나 최근 공지사항을 보여줍니다.<br>
+			                 		회원은 주문을 하고 주문조회를 할 수 있으며, 주문 목록에서 후기를 작성할 수 있습니다.<br>
+			                 		데이터 조회시 페이징 처리를 하여서 데이터를 조회하기 편하게 구현하였습니다.
 				                  </p>
 				                  <p>
 				                  	<strong>Development Environment</strong> <br>
 				                  	OS : Window10 <br>
-				                  	Library : Eclipse 2020-12 (4.18.0), jQuery(v3.6.0), AJAX, Apache Tomcat9, Servlet(v4.0), Lombok(v1.18) <br>
-				                  	Language : Html5, Css3 , Java, JavaScript <br>
+				                  	Library : jQuery, Servlet, BootStrap, JSP <br>
+				                  	Language : HTML5, CSS3 , Java(), JavaScript<br>
 				                  	Database : MariaDB, HeidiSQL <br>
-				                  	IDE : STS(v.4.10) 
+				                  	WAS : Apache Tomcat9 <br>
+				                  	IDE : Eclipse 2020-12 (4.18.0)
 				                  </p>
 				                  <p>
 				                  	<strong>Service Environment</strong><br>
@@ -330,9 +333,7 @@
 				                  	Platform : AWS Lightsail
 				                  </p>
 				                  <p>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/koi190306/todo')">Github</button>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('#')">요구사항 정의서</button>
-					              	<button type="button" class="btn btn-link" onclick="window.open('#')">ERD</button>
+				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/koi190306/shop')">Github</button>
 				                  	<button type="button" class="btn btn-link" onclick="window.open('http://3.35.48.160/shop/index.jsp')">프로젝트</button>
 				                  </p>
 				               </div>
@@ -348,19 +349,21 @@
 				               	<h2>FUN ART <span> 2021.10</span></h2>
 				               	  <h2 style="color:#46AAFF;"><strong>크라우드 펀딩 웹사이트</strong></h2>	
 				                  <p>
-									캘린더를 만들고 날짜 별로 to-do List를 작성하고 관리할 수 있는 시스템 입니다.<br>
-									간단한 DB와 Model2 방식으로 구현했으며, boot strap을 사용해 레이아웃 설정 및 디자인을 했습니다.<br>
-									사용자의 로그인 정보로 캘린더 내에 todo를 불러오며, 오늘의 일정도 출력할 수 있습니다.<br>
-									사용자는 일정 관리를 위해 일정을 추가, 삭제, 수정이 가능합니다.<br>
-									관리자는 공지사항을 입력할 수 있으며, 공지는 로그인 페이지에서 sweetalert2 api를 사용해 보여줍니다.
+				                  	예술 관련 크라우드 펀딩만 진행할 수 있는 퍼나트(funart) 입니다.<br>
+				                  	jsp 페이지와 간단한 DB, JS, api를 사용해 만들었습니다.<br>
+				                  	결제 api를 연동하여 실제 결제가 가능하게 구현하였습니다.<br>
+				                  	회원의 관심 키워드에 따라 프로젝트를 추천해주고, 인기 프로그램, 성공임박 프로그램 등 추천기능이 있습니다.<br>
+				                  	회원이라면 누구나 창작할 수 있고, 후원할 수 있습니다.<br>
+				                  	창작자들끼리 소통하여 창작물을 만들 수 있게 하였습니다.
 				                  </p>
 				                  <p>
 				                  	<strong>Development Environment</strong> <br>
 				                  	OS : Window10 <br>
-				                  	Library : Eclipse 2020-12 (4.18.0), jQuery(v3.6.0), AJAX, Apache Tomcat9, Servlet(v4.0), Lombok(v1.18) <br>
-				                  	Language : Html5, Css3 , Java, JavaScript <br>
-				                  	Database : MariaDB, HeidiSQL <br>
-				                  	IDE : STS(v.4.10) 
+				                  	Library : jQuery, Servlet, JSP <br>
+				                  	Language : HTML5, CSS3 , Java(openJDK 1.8), JavaScript<br>
+				                  	Database : MariaDB, My-Sql <br>
+				                  	WAS : Apache Tomcat9 <br>
+				                  	IDE : EditPlus 5.3, Visual studio code
 				                  </p>
 				                  <p>
 				                  	<strong>Service Environment</strong><br>
@@ -369,20 +372,44 @@
 				                  </p>
 				                  <p>
 				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/koi190306/todo')">Github</button>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('#')">요구사항 정의서</button>
-					              	<button type="button" class="btn btn-link" onclick="window.open('#')">ERD</button>
+					              	<button type="button" class="btn btn-link" onclick="window.open('images/funart_erd.png')">ERD</button>
 				                  	<button type="button" class="btn btn-link" onclick="window.open('#')">프로젝트</button>
 				                  </p>
 				               </div>
 				            </div>
 				         </article>
-
 				      </div>
 				   </div>
 			   </div>
 			</div>
 		</section>
-		<section class="colorlib-experience" data-section="contect">
+		
+		<section class="colorlib-contact" data-section="contact">
+			<div class="colorlib-narrow-content">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+						<span class="heading-meta">Contact</span>
+						<h2 class="colorlib-heading animate-box">Contact</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-10">
+								<div class="about-desc">
+									<h3>My Address</h3>
+									<ul class="contact-info">
+										<li>Seo-gu, Incheon, Republic of Korea</li>
+										<li>010 9944 9065</li>
+										<li>soymilk_s2@naver.com</li>
+									</ul>
+									<div style="height: 220px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 	</div><!-- end:colorlib-main -->
